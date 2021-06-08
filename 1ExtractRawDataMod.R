@@ -93,7 +93,7 @@ unlabelledFeatureFileNames = featureFileNames[detectUnlabelledFeatureFileNames]
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, dbname = databaseName,
                  host = "localhost", port = 5432,
-                 user = "postgres", password = "postgres")
+                 user = "", password = "")
 sql1 = "select * from "
 sql2 = " where spectrumid like "
 
